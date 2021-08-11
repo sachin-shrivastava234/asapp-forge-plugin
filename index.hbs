@@ -1,0 +1,26 @@
+<div class="plugin_asappbanking-com_asapp_forge">
+    <h1 class="display-1">Open an Account</h1>
+    <form action="{{url_create_account}}" method="post">
+        <input type="hidden" id="SiteKey" name="SiteKey" value="{{site_key}}" />
+        <input type="hidden" id="AuthCode" name="AuthCode" value="{{auth_code}}" />
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <select id="accountTypes" name="accountTypes"></select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <select id="accounts" name="accounts"></select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="submit">Create Account</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</div>

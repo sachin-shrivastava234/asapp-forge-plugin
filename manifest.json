@@ -1,0 +1,32 @@
+{
+  "configurable_preferences": [
+    {
+      "key": "site_key",
+      "label": "Site Key provided by ASAPP",
+      "default_value": "C66D148D-CB07-4E02-9A3E-85A2AE36518E",
+      "data_type": "string",
+      "editor_role": "content_editor"
+    },
+    {
+      "key": "url_create_account",
+      "label": "ASAPP Create Account Endpoint",
+      "default_value": "https://asapp-dev-11-5.uat.asappbanking.com/forge/createaccount",
+      "data_type": "string",
+      "editor_role": "content_editor"
+    },
+    {
+      "key": "url_get_accounts",
+      "label": "ASAPP List of Accounts Endpoint",
+      "default_value": "https://asapp-dev-11-5.uat.asappbanking.com/forge/getaccounts",
+      "data_type": "string",
+      "editor_role": "content_editor"
+    }
+  ],
+  "start_template": "index.hbs",
+  "name": "asapp-forge",
+  "description": "ASAPP AOS Forge Plugin",
+  "vendor_id": "asappbanking-com",
+  "id": "asappbanking-com/asapp-forge",
+  "type": "micro_frontend",
+  "version": "1.0.0"
+}
