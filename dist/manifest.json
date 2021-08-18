@@ -8,16 +8,9 @@
       "editor_role": "content_editor"
     },
     {
-      "key": "url_create_account",
-      "label": "ASAPP Create Account Endpoint",
-      "default_value": "https://asapp-dev-11-5.uat.asappbanking.com/forge/createaccount",
-      "data_type": "string",
-      "editor_role": "content_editor"
-    },
-    {
-      "key": "url_get_accounts",
-      "label": "ASAPP List of Accounts Endpoint",
-      "default_value": "https://asapp-dev-11-5.uat.asappbanking.com/forge/getaccounts",
+      "key": "asapp_endpoint",
+      "label": "ASAPP Endpoint",
+      "default_value": "https://asapp-dev-11-5.uat.asappbanking.com",
       "data_type": "string",
       "editor_role": "content_editor"
     }

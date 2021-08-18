@@ -1,6 +1,6 @@
 <div class="plugin_asappbanking-com_asapp_forge">
     <h1 class="display-1">Open an Account</h1>
-    <form action="{{url_create_account}}" method="post">
+    <form action="{{asapp_endpoint}}/forge/createaccount" method="post">
         <input type="hidden" id="SiteKey" name="SiteKey" value="{{site_key}}" />
         <input type="hidden" id="AuthCode" name="AuthCode" value="{{auth_code}}" />
         <div class="container">
@@ -22,5 +22,5 @@
         </div>
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="script.js"></script>
+    <script src="{{asapp_endpoint}}/scripts/forgePlugin.js"></script>
 </div>
