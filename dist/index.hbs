@@ -1,22 +1,31 @@
 <div class="plugin_asappbanking-com_asapp_forge">
-    <h1 class="display-1">Open an Account</h1>
+
+
+
+    <h1 class="d-inline col-10">Open an Account</h1>
+    <div class="instructions"><br><p>To save you time, we'll pre-fill your application with the personal information we already have. This won’t take long.</p></div>
+    <hr aria-hidden="true">
     <form action="{{asapp_endpoint}}/forge/createaccount" method="post">
         <input type="hidden" id="SiteKey" name="SiteKey" value="{{site_key}}" />
         <input type="hidden" id="AuthCode" name="AuthCode" value="{{auth_code}}" />
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <select id="accountTypes" name="accountTypes"></select>
+                    <label class="form-label" for="accountTypes" title="Account Types">What type of account are you interested in opening today?</label>
+                    <select class="form-select" id="accountTypes" name="accountTypes"><option selected="true" disabled=""></option><option value="1">Deposit Account</option><option value="4">Chequing Account</option><option value="8">Loan</option><option value="16">Line of Credit</option><option value="32">Mortgage</option><option value="8192">Term Deposit</option></select>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <select id="accounts" name="accounts"></select>
+
+                    <label class="form-label" for="accounts" title="Accounts">Please select an account and begin your application</label>
+                    <select class="form-select" id="accounts" name="accounts"><option selected="true" disabled=""></option><option value="356">High Interest Savings Account</option><option value="360">RRSP Product </option><option value="361">TFSA Product </option><option value="477">Savings Account</option><option value="487">High Interest Savings Account</option><option value="490">High Interest Savings Account</option><option value="500">High Interest Savings Account</option><option value="508">High Interest Savings Account</option><option value="519">In Branch HR Saving</option><option value="533">New Year's Saving Account</option><option value="594">RIF N</option><option value="595">TFSA N</option><option value="597">Dep Acc</option><option value="598">TFSA NN</option><option value="620">NN Saving</option></select>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <button type="submit">Create Account</button>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Open Account</button>
                 </div>
             </div>
         </div>
